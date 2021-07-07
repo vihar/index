@@ -18,7 +18,7 @@ import { globalContext } from "@contexts/global";
 const SignUpPage = () => {
   const [globalState, globalDispatch] = useContext(globalContext);
 
-  const title = "Sign-Up | Level";
+  const title = "Sign-Up | Index";
   const router = useRouter();
 
   const [buttonLoader, setButtonLoader] = useState<any>(false);
