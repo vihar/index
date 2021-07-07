@@ -1,0 +1,52 @@
+.dashboard-grid-wrapper {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+    "dashboard-left-sidebar dashboard-header "
+    "dashboard-left-sidebar dashboard-main";
+  height: 100vh;
+  overflow: hidden;
+}
+.dashboard-grid-header {
+  grid-area: dashboard-header;
+  box-sizing: border-box;
+  background: #f4f7fa;
+}
+.dashboard-left-sidebar {
+  grid-area: dashboard-left-sidebar;
+  box-sizing: border-box;
+  background: white;
+}
+.dashboard-grid-main {
+  grid-area: dashboard-main;
+  box-sizing: border-box;
+  background: #f4f7fa;
+  overflow-y: auto;
+}
+
+.dashboard-side-nav-links .nav-item .nav-link {
+  font-weight: bold;
+  margin: 10px 0px;
+  padding-left: 20px;
+}
+
+.dashboard-side-nav-links .nav-item .active {
+  font-weight: bold;
+  padding-left: 20px;
+  margin: 10px 0px;
+  border-radius: 12px;
+  background: #ff8008; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff8008, #ffc837); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff8008, #ffc837);
+  color: white;
+}
+
+.icon-global-md {
+  height: 20px;
+  width: 20px;
+}
+.icon-global-lg {
+  height: 60px;
+  width: 60px;
+}
